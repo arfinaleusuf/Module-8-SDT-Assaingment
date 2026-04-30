@@ -15,11 +15,22 @@ class Student:
         self.__is_enrolled = is_enrolled
         StudentDatabase.add_student(self)
 
+    @property
     def is_enrolled(self):
         return self.__is_enrolled
+    
+    @property
+    def get_student_id(self):
+        return self.__student_id
 
     def enroll_student(self):
         if self.__is_enrolled:
-            print('Error: Student Is Already Enrolled')
+            print('Error: Student is already enrolled')
         else:
             self.__is_enrolled = True
+
+    def drop_student(self):
+        if self.__is_enrolled:
+            self.__is_enrolled = False
+        else:
+            print('Error: Student is not enrolled')

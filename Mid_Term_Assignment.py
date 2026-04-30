@@ -58,7 +58,7 @@ class Student:
 
 
 s1 = Student('s101','Alice Smith', 'computer seience', True)
-s2 = Student('s102','Bob Jonson', 'Mathmatics', False)
+s2 = Student('s102','Bob Jonson', 'Math', False)
 s3 = Student('s103','Charlie Lee', 'Physics', True)
 
 
